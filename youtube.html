@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="scaler.css" rel="stylesheet">
+    <link href="lift.css" rel="stylesheet">
+    <link href="stylesMainPage.css" rel="stylesheet">
+    <link href="youtube.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
+    <title>NOVERLIN - News</title>
+</head>
+<body>
+  <a name="news" style="position: absolute; top: 66vh"></a>
+  <a name="footer" style="position: absolute; top: 1000vh"></a>
+
+  <nav class="navbar bg-black navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5 fs-2 text-secondaryMy logo" href="index.html">NOVERLIN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse uu"  id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="fs-5 nav-link text-secondaryMy me-3 ms-3 navHoverFX hoverLine" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="fs-5 nav-link text-secondaryMy me-3 ms-3 navHoverFX hoverLine"  href="news.html">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="fs-5 nav-link text-secondaryMy me-3 ms-3 navHoverFX hoverLine"  href="youtube.html">YOUTUBE</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="fs-5 nav-link text-secondaryMy me-3 ms-3" href="index.html">BEATS</a>
+          </li> -->
+        </ul>
+        <img src="sprites/Youtube.png" class="media ms-3 me-3 hoverLine" onclick="location.href='https://www.youtube.com/channel/UCnnXNLGRxQbZGBYUCy3_tNQ';">
+        <img src="sprites/Instagram.png" class="media ms-3 me-3 hoverLine" onclick="location.href='https://www.instagram.com/nover_lin';">
+        <img src="sprites/vk.png" class="media ms-3 me-5 hoverLine" onclick="location.href='https://vk.com/artist/noverlin_mty0ntyxodi2mq';">
+      </div>
+    </div>
+  </nav>
+
+    <div class="liftPanel" style="height: 85px;">
+      <a class="floor" href="#"></a>
+      <a class="floor" href="#footer"></a>
+    </div>
+
+    <div id="detailVPanel" class="detailVPanel" style="visibility: hidden" onclick="ChangeVPActive()">
+        <div class="detailVCard"  onclick="Empty(event)">
+        <div id="VDcover" class="videoCover" style="cursor: pointer;">
+          <!-- <img style="width: 100%;" src="https://i.ytimg.com/vi/moCIoAULIjs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLiWwXkQw9tdvx9OQgq1kPYjfPeg" alt=""> -->
+          <!-- <div class="timer"></div> -->
+        </div>
+        <div class="videoInfo">
+            <h2 id="VDtitle" class="videoTitle" style="overflow: hidden; height: auto;">Сохранение данных в Unity | Использование класса PlayerPrefs | Сереализация с помощью средств Unity</h2>
+            <h2 class="detailVdescription">
+                <div id="arrow" class="arrow aDown" style="cursor: pointer;" onclick="HandleArrowClick()"></div>
+                <p id="description" class="hide">
+                    Привет, меня зовут NOVERLIN  и в этом видео я расскажу сохранении данных в Unity с помощью класса Player Prefs
+
+                    Player Prefs позволяет сохранять данные различных типов и загружать привходе в игру. Надеюсь тебе понравится это видео... Запасайся бутером с чайком и приятного просмотра.
+
+                    Таймкоды:
+                    00:00 - Приветствие
+                    00:06 - Объяснение темы
+                    00:21 - Не происходит защиты информации
+                    00:39 - Подпишись
+                    00:47 - Пример работы с PlayerPrefs
+                    03:35 - Выгрузка сохранённых данных в память устройства
+                    05:18 - Запуск получившегося скрипта
+                    06:00 - Удаление ключей
+                    06:37 - Сохранение структур (классов и не только :) )
+                    07:11 - Проверка на существование ключа
+                    07:40 - Поставь лайк!
+                    07:50 - Спасибо и пока)
+                    Таймкоды:
+                    00:00 - Приветствие
+                    00:06 - Объяснение темы
+                    00:21 - Не происходит защиты информации
+                    00:39 - Подпишись
+                    00:47 - Пример работы с PlayerPrefs
+                    03:35 - Выгрузка сохранённых данных в память устройства
+                    05:18 - Запуск получившегося скрипта
+                    06:00 - Удаление ключей
+                    06:37 - Сохранение структур (классов и не только :) )
+                    07:11 - Проверка на существование ключа
+                    07:40 - Поставь лайк!
+                    07:50 - Спасибо и пока)
+                    Таймкоды:
+                    00:00 - Приветствие
+                    00:06 - Объяснение темы
+                    00:21 - Не происходит защиты информации
+                    00:39 - Подпишись
+                    00:47 - Пример работы с PlayerPrefs
+                    03:35 - Выгрузка сохранённых данных в память устройства
+                    05:18 - Запуск получившегося скрипта
+                    06:00 - Удаление ключей
+                    06:37 - Сохранение структур (классов и не только :) )
+                    07:11 - Проверка на существование ключа
+                    07:40 - Поставь лайк!
+                    07:50 - Спасибо и пока)
+                </p>
+            </h2>
+          <div class="line"></div>
+          <div class="parameters">
+            <div class="parameter"><img src="sprites/like.png" alt=""><p>10</p></div>
+            <div class="parameter"><img src="sprites/eye.png" alt=""><p>10</p></div>
+            <div class="parameter timeAgo">3 месяца назад</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 7vh;"></div>
+
+    <div class="banner">
+      <div class="blurCircleYoutube" onclick="window.open('https://www.youtube.com/@noverlin');" style="cursor: pointer;">
+          <!-- <div class="channelIcon" style="background-image: url('sprites/profile.jpg')"></div> -->
+          <div class="channelInfo">
+            <h2 class="channelTitle" id="title">NOVERLIN</h2>
+            <h6>Канал о разработке на Unity и C++ Builder</h6>
+          </div>          
+          <button class="subscribeBtn">SUBSCRIBE</button>
+      </div>
+    </div>    
+
+    <div class="subscribersPanel">
+      <div class="countContainer">
+        <h1 class="benefits__number" id="subs"></h1>
+        <h6>subscribers</h6>
+      </div>
+      <div class="countContainer">
+        <h1 class="benefits__number" id="views"></h1>
+        <h6>views</h6>
+      </div>
+    </div>
+    <div class="lastVideoPanel">
+      <!-- <div class="videoCard">
+        <div class="videoCover">
+          <img style="width: 100%;" src="https://i.ytimg.com/vi/moCIoAULIjs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLiWwXkQw9tdvx9OQgq1kPYjfPeg" alt="">
+          <div class="timer"></div>
+        </div>
+        <div class="videoInfo">
+          <h2 class="videoTitle">Сохранение данных в Unity | Использование класса PlayerPrefs | Сереализация с помощью средств Unity</h2>
+          <div class="line"></div>
+          <div class="parameters">
+            <div class="parameter"><img src="sprites/like.png" alt=""><p>10</p></div>
+            <div class="parameter"><img src="sprites/eye.png" alt=""><p>10</p></div>
+            <div class="parameter timeAgo">3 месяца назад</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="front/db.js"></script>
+    <script src="front/FX.js"></script>
+    <script src="front/buildLastNews.js"></script>
+    <script src="front/jquery.spincrement.min.js"></script>
+    <script src="front/custom.js"></script>
+    <script src="front/buildAllNews.js"></script>    
+
+    <!-- JavaScript Bundle with Popper -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</body>
+</html>
